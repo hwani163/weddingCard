@@ -1,0 +1,38 @@
+{
+  "name": "Next.JS Progressive Web App",
+  "short_name": "Next PWA",
+  "theme_color": "#ffffff",
+  "background_color": "#004740",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "icons/icon32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon54.png",
+      "sizes": "62x62",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

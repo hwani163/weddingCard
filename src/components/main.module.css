@@ -1,0 +1,114 @@
+.boy_name,
+.girl_name {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0.375rem;
+    width: 1.25rem;
+    font-family: "KoPub Batang";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.invite {
+    margin-left: 0.375rem;
+    width: 1.25rem;
+    font-family: "KoPub Batang";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.desc {
+    font-size: 0.813rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    color: #111;
+    text-align: center;
+    white-space: pre-wrap;
+}
+.honju {
+    text-align: center;
+    font-family: 'KoPub Batang';
+}
+
+.honju span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    white-space: pre-wrap;
+    font-family: 'KoPub Batang';
+}
+
+.dot {
+    position: relative;
+    width: 0.75rem;
+    height: 1.5rem;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    white-space: pre-wrap;
+}
+.dot::after {
+    content: ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+}
+
+.short_name {
+    padding-left: 0.313rem;
+    font-size: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.heart {
+    float: left;
+    font-family: "Noto Sans KR";
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2.50rem;
+    color: #111;
+}
+.account_btn{
+    margin-left:1.25rem;
+    width:11.25rem;
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    color: #111;
+    border-radius: 2.5rem;
+    font-size: 0.813rem;
+    line-height: 2.5rem;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.accountModal div{
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    color: #111;
+}

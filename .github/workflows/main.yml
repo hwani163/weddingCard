@@ -1,0 +1,40 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+          host: am400000.iptime.org
+          username: won
+          password: qwer1234
+          key: ${{ secrets.PRIVATE_KEY }}
+          port: 22
+          script: |
+            whoami
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
+            npm --help
+            cd ~/Desktop/workspace/weddingCard
+            nvm use 14
+            git checkout .
+            git checkout master
+            git pull origin master
+            sh ~/Desktop/workspace/weddingCard/deploy.sh

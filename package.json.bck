@@ -1,0 +1,47 @@
+{
+  "name": "shwon.life",
+  "version": "1.0.0",
+  "main": "index.js",
+  "cacheDirectories": [
+    ".next/cache"
+  ],
+  "engines": {
+    "node": "17.8"
+  },
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "lint": "eslint ./",
+    "deploy": "npm install && npm run build && pm2 reload ecosystem.config.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react-dotenv": "^0.1.3",
+    "react-image-gallery": "^1.2.7",
+    "react-kakao-login": "^2.1.0",
+    "react-parallax": "^3.3.0",
+    "sass": "^1.39.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "session-file-store": "^1.5.0",
+    "socket.io": "^4.2.0",
+    "socket.io-client": "^4.2.0",
+    "universal-cookie": "^4.0.4",
+    "use-sound": "^4.0.1",
+    "validator": "^13.1.17",
+    "with-context": "0.0.3",
+    "next": "12.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.2"
+  }
+}

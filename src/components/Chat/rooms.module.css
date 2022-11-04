@@ -1,0 +1,83 @@
+.navRow {
+  display: flex;
+  justify-content: space-between;
+}
+.main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.main::-webkit-scrollbar {
+  width: 0.3rem;
+}
+.main::-webkit-scrollbar-track {
+  background: #0b93f6;
+}
+.main::-webkit-scrollbar-thumb {
+  background: #3f51b5;
+}
+.text {
+  position: relative;
+  color: white;
+}
+.audio {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 7px 7px;
+  border-radius: 10px;
+  position: relative;
+  color: black;
+  text-align: center;
+}
+.message {
+  display: flex;
+  min-height: 50px;
+}
+
+.text {
+  color: white;
+  /* background: #0b93f6; */
+  flex: 1;
+  display: flex;
+}
+.received .text {
+  /* background: #e5e5ea; */
+  color: black;
+}
+.form {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.mic {
+  cursor: pointer;
+  font-size: 40px;
+}
+.textBtn {
+  padding: 10px;
+  margin: 6px;
+  width: 20%;
+}
+.formCol {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#pagenation > ul > li.ant-pagination-simple-pager {
+  display: inline-flex !important;
+}
+
+.chat p {
+  font-family: "Noto Sans KR";
+}
+.chat span {
+  font-family: "Noto Sans KR";
+}
+.chat span {
+  font-family: "Noto Sans KR";
+}
